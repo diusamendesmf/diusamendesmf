@@ -27,7 +27,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#F8F3E8; --surface:#EDE3CD; color-scheme:light; --ink:#2B2418; --muted:#6B5E48;
+  --bg:#F8F3E8; --surface:#EDE3CD; color-scheme:light; --ink:#9A6F7E; --muted:#6B5E48;
   --accent:#8F6A1C; --nome:#A8725E; --accent-ink:#FFFFFF; --sun:#C9A24A; --line:#DDD0B0;
   --display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
   --body:"Figtree","Segoe UI",system-ui,sans-serif;
@@ -59,11 +59,16 @@ section{padding:3.5rem 0}
 h2{font:700 clamp(1.9rem,5vw,2.8rem)/1.1 var(--display);margin:0 0 .5rem}
 .lead{color:var(--muted);margin:0 0 2rem;max-width:36rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
-.tile{min-height:260px;border-radius:28px 28px 120px 28px;padding:1.5rem;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;color:#fff}
+.tile{aspect-ratio:3/4;border-radius:28px 28px 120px 28px;padding:1.5rem;display:flex;flex-direction:column;justify-content:flex-end;text-decoration:none;color:#fff;background-color:#E8D9B0;background-size:cover;background-position:center top;background-repeat:no-repeat;overflow:hidden;transition:transform .2s}
+.tile:hover{transform:translateY(-3px)}
+.tile h3,.tile p{text-shadow:0 1px 8px rgba(40,25,35,.55)}
 .tile:nth-child(2n){border-radius:28px 120px 28px 28px}
 .tile h3{font:700 1.6rem var(--display);margin:0}
 .tile p{margin:.25rem 0 0;opacity:.92;font-size:.95rem}
-.t1{background:#8F6A1C}.t2{background:#3A3020}.t3{background:#C9A24A;color:#2B2418}.t4{background:#2B2418}.t5{background:#E8D9B0;color:#2B2418}
+.t1{background-image:linear-gradient(to top,rgba(50,30,40,.6),rgba(50,30,40,0) 55%),url(fotos/vestidos.jpg)}
+.t2{background-image:linear-gradient(to top,rgba(50,30,40,.6),rgba(50,30,40,0) 55%),url(fotos/conjuntos.jpg)}
+.t3{background-image:linear-gradient(to top,rgba(50,30,40,.6),rgba(50,30,40,0) 55%),url(fotos/blusas.jpg)}
+.t4{background-image:linear-gradient(to top,rgba(50,30,40,.6),rgba(50,30,40,0) 55%),url(fotos/saias-calcas.jpg)}
 .how{background:var(--surface);border-radius:36px;padding:2.5rem 1.5rem}
 .how ol{margin:0;padding:0;list-style:none;display:grid;gap:1.5rem;counter-reset:s}
 @media(min-width:760px){.how ol{grid-template-columns:repeat(3,1fr)}.how{padding:3rem}}
@@ -161,7 +166,6 @@ button.btn{border:0;cursor:pointer;font:600 1rem var(--body);text-align:center}
         <a class="tile t2" href="https://www.instagram.com/diusamendesmf" target="_blank" rel="noopener"><h3>Conjuntos</h3><p>Prontos para vestir</p></a>
         <a class="tile t3" href="https://www.instagram.com/diusamendesmf" target="_blank" rel="noopener"><h3>Blusas</h3><p>Leves e versáteis</p></a>
         <a class="tile t4" href="https://www.instagram.com/diusamendesmf" target="_blank" rel="noopener"><h3>Saias e calças</h3><p>Para combinar</p></a>
-        <a class="tile t5" href="https://www.instagram.com/diusamendesmf" target="_blank" rel="noopener"><h3>Acessórios</h3><p>O toque final</p></a>
       </div>
     </section>
 
