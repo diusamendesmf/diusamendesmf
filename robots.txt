@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://joaovictorm1921-sudo.github.io/diusamendesmf/sitemap.xml
